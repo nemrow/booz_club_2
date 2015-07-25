@@ -1,2 +1,7 @@
-{{input value=boozeType}}
-<button class="search-btn" {{action 'beginSearch'}}>Search</button>
+{{#if locationFound}}
+  <p>location found</p>
+  {{input value=boozeType}}
+  <button class="search-btn" {{action 'beginSearch'}}>Search</button>
+{{else}}
+  <p>searching for location</p>
+{{/if}}

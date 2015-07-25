@@ -38,5 +38,8 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "emberfire": "1.4.7"
+  },
+  "dependencies": {
+    "ember-cli-geolocation": "0.0.13"
   }
 }
