@@ -5,6 +5,7 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @route 'search', path: ""
+  @route 'search', path: '', ->
+    @route "results", path: ':searchId'
 
 `export default Router`

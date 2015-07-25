@@ -1,5 +1,4 @@
 `import Ember from 'ember'`
-`import GeoLocationMixin from 'booz-club-2/mixins/geolocation-mixin'`
 
 SearchController = Ember.Controller.extend
   latitude: null
@@ -23,5 +22,6 @@ SearchController = Ember.Controller.extend
         latitude: @get('latitude')
       }
       newSearch.save()
+      @transitionTo "search.results", newSearch.get('id')
 
 `export default SearchController`
